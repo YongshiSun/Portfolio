@@ -14,10 +14,13 @@ header {
     color: #3f3f3f;
 }
 body{
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family:'melon_camp',cursive;
     color: #3f3f3f;
     background-color: beige;
+    /*background-image: url("https://themantraco.com/wp-content/uploads/2021/07/daily-bg-copy-scaled.jpg");
+    background-image: url("images/Website Planner/full size/planner_cover.png");
+    background-size: cover;*/
 }
 ul{
     list-style-type: none;
@@ -40,4 +43,35 @@ footer {
   footer::before {
     content: counter(page);
     display: block;
+  }
+
+  html, body{
+    /*
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/free size/bm5.png");*/
+  }
+
+  div.planner_cover{
+    padding-top: 20px;
+    position: relative;
+    height:100vh;
+    min-height: 100%;
+    background-image: url("images/Website Planner/full size/planner_cover.png");
+    /*background-size: contain;*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:block; 
+  }
+
+  div.page_left{
+    height:inherit;
+    width: 50%;
+
+  }
+  div.page_right{
+    position: absolute;
   }
