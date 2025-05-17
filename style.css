@@ -73,7 +73,7 @@ footer {
     position: relative; /*we want relative for the div that all the text position will depend on*/
     /*height:100vh;
     width: 100vw;*/
-    height: 1280px;
+    height: 100vh;
     width: auto;
     max-height: 100vh;
     max-width: 100vw;
@@ -109,19 +109,24 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    justify-content: center; /*centers child div horizontally, need display:flex: ;*/
+    align-items: center;/*centers child div vertically*/
   }
   div.page_box{
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 635px;
+    width: 880px;
   }
   div.page_sides{
     position: absolute;
-    height: 90%;
-    width: 70%;
+    top:70px;
+    height: 80vh;
+    width: auto;
     /*margin: 30px 200px 30px 200px;
     padding: 20px 30px 20px 30px;*/
-    display: inline-flex;
+    display: inline-flex; /*splits the 2 pages in half*/
   }
 
   div.page_left{
