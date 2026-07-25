@@ -116,17 +116,23 @@ footer {
   div.page_box{
     display: flex;
     justify-content: center;
-    height: 635px;
-    width: 880px;
+    /*height: 635px;
+    width: 880px;*/
+    height:auto;
+    width:70%;
   }
   div.page_sides{
-    position: absolute;
+    /*position: absolute;*/
     top:70px;
     height: 80vh;
-    width: auto;
+    width: 80vw;
     /*margin: 30px 200px 30px 200px;
     padding: 20px 30px 20px 30px;*/
     display: inline-flex; /*splits the 2 pages in half*/
+  }
+
+  ul.toc{
+    line-height: 3;;
   }
 
   div.page_left{
