@@ -39,10 +39,10 @@ ul{
 li:hover{
     /*text-shadow: #af2323 0px 0px 5px;*/
     /*text-shadow: -1px -1px 0 #2c7713, 1px -1px 0 #2c7713, -1px 1px 0 #2c7713, 1px 1px 0 #2c7713;*/
-    background-color: white;
+    background-color: beige;
 }
 li{
-  text-align: left;
+  text-align: center;
 }
 footer {
     position: absolute;
@@ -53,6 +53,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3%;
   }
   
   footer::before {
@@ -124,7 +125,7 @@ footer {
   }
   .page_bg{
     display: block;
-    max-width: 99%;
+    max-width: 99%; /*adjust because page was slightly pushing to the right*/
     max-height: 100%;
     /*object-fit: contain;*/
     border:3px solid blue;
@@ -144,21 +145,31 @@ footer {
     position: relative;
     height: 100%;
     width: 100%;
-    padding: 3% 2%;
+    box-sizing:border-box;
+    padding: 3% 5% 4% 4%; /*top, right, bottom, left, adjusted for right because we made it slightly smaller is page_bg*/
     display: inline-flex; /*splits the 2 pages in half*/
   }
 
+  .page_print{
+    box-sizing:border-box; /* makes it so instead of padding pushing the object down, it replaces the object content with padding so box outline stays the same*/
+    padding: 5% 4%;
+  }
+
   ul.toc{
-    line-height: 3;;
+    line-height: 3;
+    padding-left: 0; /*gets rid of ul's natural left padding*/
   }
 
   .page_left{
-
     height:100%;
     width: 50%;
+
+    text-align: center;
 
   }
   .page_right{
     height:100%;
     width: 50%;
+
+    text-align: center;
   }
