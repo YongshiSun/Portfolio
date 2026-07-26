@@ -6,7 +6,7 @@
     src: url('Licenses/Fonts/melon_camp/Melon Camp/Melon Camp.ttf') format('truetype');
 }
   
-/*utility classes*/
+/*utility classes* 1250px  with is when it starts to skrink/
 .container{
   max-width: 1100px;
   margin: 0 auto;/*top and bottom 0, but left and right auto, this will center your container*/
@@ -105,25 +105,26 @@ footer {
     position: absolute;
     height: 100%;
     width: 100%;
+
+    display: flex; /* need it to center childrens and to use justify-content*/
+    justify-content: center; /*centers child div horizontally, need display:flex: ;*/
+    align-items: center;/*centers child div vertically*/
+
     background-image: url("images/Website Planner/full size/page1.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    justify-content: center; /*centers child div horizontally, need display:flex: ;*/
-    align-items: center;/*centers child div vertically*/
   }
   div.page_box{
+    position: absolute; /*prevents flexbox from shinking page1 outline*/
     display: flex;
     justify-content: center;
-    /*height: 635px;
-    width: 880px;*/
-    height:auto;
-    width:70%;
+    height:800px;
+    width:1080px;
   }
   div.page_sides{
-    /*position: absolute;*/
-    top:70px;
+    position: relative;
+    top: 1vh;
     height: 80vh;
     width: 80vw;
     /*margin: 30px 200px 30px 200px;
