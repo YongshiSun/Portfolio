@@ -46,14 +46,15 @@ li{
 }
 footer {
     position: absolute;
-    bottom: 30px;
+    bottom: 6cqh;
     left: 0;
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 3%;
+    align-items: end;
+    padding-bottom: 4cqh;
+    font-size: 3cqh;
   }
   
   footer::before {
@@ -69,7 +70,9 @@ footer {
     align-items: center;
     background-image: url("images/free size/bm5.png");*/
   }
+  .book{
 
+  }
   .planner_cover{
     position: relative; /*we want relative for the div that all the text position will depend on*/
     height: 100vh;
@@ -82,6 +85,14 @@ footer {
     /*background-size: 100%;*/
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .bookmarks{
+    position: absolute;
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
   .page3{
     position: absolute;
@@ -110,11 +121,11 @@ footer {
     justify-content: center; /*centers child div horizontally, need display:flex: ;*/
     align-items: center;/*centers child div vertically*/
 
-    /*background-image: url("images/Website Planner/full size/page1.png");
+    background-image: url("images/Website Planner/full size/page1.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;*/
-    border:3px solid red;
+    background-position: center;
+    /*border:3px solid red;*/
   }
   .page_wrapper{
     position: relative;
@@ -125,10 +136,10 @@ footer {
   }
   .page_bg{
     display: block;
-    max-width: 99%; /*adjust because page was slightly pushing to the right*/
+    max-width: 100%;
     max-height: 100%;
-    /*object-fit: contain;*/
-    border:3px solid blue;
+    /*object-fit: contain;
+    border:3px solid blue;*/
   }
   .page_box{
     position: absolute; /*prevents flexbox from shinking page1 outline*/
@@ -139,7 +150,7 @@ footer {
 
     display: flex;
     justify-content: center;
-    border:3px solid green;
+    /*border:3px solid green;*/
   }
   .page_sides{
     position: relative;
@@ -148,16 +159,26 @@ footer {
     box-sizing:border-box;
     padding: 3% 5% 4% 4%; /*top, right, bottom, left, adjusted for right because we made it slightly smaller is page_bg*/
     display: inline-flex; /*splits the 2 pages in half*/
+    container-type: size; /*using this container for cqh and cqw to reference from*/
   }
 
   .page_print{
     box-sizing:border-box; /* makes it so instead of padding pushing the object down, it replaces the object content with padding so box outline stays the same*/
     padding: 5% 4%;
+    font-size: 3cqh;
   }
 
   ul.toc{
     line-height: 3;
     padding-left: 0; /*gets rid of ul's natural left padding*/
+  }
+
+  .toc a{
+    text-decoration: none;
+  }
+
+  .toc a:visited{
+    color:#3f3f3f;
   }
 
   .page_left{
