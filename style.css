@@ -127,6 +127,9 @@ footer {
     background-position: center;
     /*border:3px solid red;*/
   }
+  img#this_page{
+    z-index: 2; /*have the bookmark be on top of the page*/
+  }
   .page_wrapper{
     position: relative;
     display: inline-block;
@@ -161,6 +164,7 @@ footer {
     display: inline-flex; /*splits the 2 pages in half*/
     justify-content: center;
     container-type: size; /*using this container for cqh and cqw to reference from*/
+    z-index: 3; /*need to make sure its above top bookmark or else cant click links*/
   }
 
   .page_print{
@@ -176,6 +180,7 @@ footer {
 
   .toc a{
     text-decoration: none;
+    color:#3f3f3f;
   }
 
   .toc a:visited{
@@ -183,17 +188,22 @@ footer {
   }
 
   #toc_aboutme:hover{
-    background-color: #FFDFA0;
-  }
-  #toc_experiences:hover{
+    /*background-color: #FFDFA0;*/
     background-color: #C9C3FF;
   }
-  #toc_gameplay:hover{
+  #toc_experiences:hover{
     background-color: #FEA19B;
+  }
+  #toc_gameplay:hover{
+    background-color: #C3DEB9;
   } 
   #toc_design:hover{
-    background-color: #C3DEB9;
+    background-color: #B1D7E1;
   }
+  #toc_contact:hover{
+    background-color: #FCB4D0;
+  }
+
   .page_left{
     height:100%;
     width: 50%;
