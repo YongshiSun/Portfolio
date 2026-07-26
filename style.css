@@ -157,8 +157,9 @@ footer {
     height: 100%;
     width: 100%;
     box-sizing:border-box;
-    padding: 3% 5% 4% 4%; /*top, right, bottom, left, adjusted for right because we made it slightly smaller is page_bg*/
+    padding: 3% 5% 4% 5%;
     display: inline-flex; /*splits the 2 pages in half*/
+    justify-content: center;
     container-type: size; /*using this container for cqh and cqw to reference from*/
   }
 
@@ -181,6 +182,18 @@ footer {
     color:#3f3f3f;
   }
 
+  #toc_aboutme:hover{
+    background-color: #FFDFA0;
+  }
+  #toc_experiences:hover{
+    background-color: #C9C3FF;
+  }
+  #toc_gameplay:hover{
+    background-color: #FEA19B;
+  } 
+  #toc_design:hover{
+    background-color: #C3DEB9;
+  }
   .page_left{
     height:100%;
     width: 50%;
