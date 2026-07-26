@@ -29,9 +29,8 @@ body{
     font-family:'melon_camp',cursive;
     color: #3f3f3f;
     background-color: beige;
-    /*background-image: url("https://themantraco.com/wp-content/uploads/2021/07/daily-bg-copy-scaled.jpg");
-    background-image: url("images/Website Planner/full size/planner_cover.png");
-    background-size: cover;*/
+    background-image: url('images/Website Planner/bg/iStock-1474924997.jpg');
+    background-size: cover;
 }
 ul{
     list-style-type: none;
