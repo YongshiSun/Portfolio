@@ -53,7 +53,6 @@ function createBook(leftContent, rightContent, pg_no, bm_no){
                                 <div></div>
                                 <div></div>
                                 <div></div>
-                                div></div>
                             </div>
 
                         </div>
