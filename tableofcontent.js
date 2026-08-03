@@ -14,9 +14,11 @@ createBook(
     `
         <h2> Mini Tutorial :</h2>
         <ul class="toc_right toc">
-           <li>Each page has a unique color that matches its tab.</li>
+            <li>Each page has a unique color that matches its tab.</li>
+            <li>Hover over the list to see each page's color.</li>
             <li>Click a colored tab to navigate to its page.</li>
             <li>Forgot a page color? Click the yellow tab (top left) to return to the Table of Contents.</li>
+            <div>Thanks for looking!</div>
         </ul>
     `, 1, 0
 );
