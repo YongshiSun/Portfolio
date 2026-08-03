@@ -23,6 +23,8 @@ header {
     font-size: 2em;
     font-family:'melon_camp',cursive;
     color: #3f3f3f;
+    margin-block-start: .43em;
+    margin-block-end: .6em;
 }
 h2{
   font-weight: normal;
@@ -204,7 +206,6 @@ footer {
   ul.toc_right{
     list-style-type: disc;
     display: inline-block; /*suppose to put the dot closer to the text, but currently not doing that*/
-    margin-top: 0;
   }
   .toc_right li{
     line-height: normal;
