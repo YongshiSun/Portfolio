@@ -203,7 +203,7 @@ footer {
   }
   ul.toc_right{
     list-style-type: disc;
-    display: inline-block;
+    display: inline-block; /*suppose to put the dot closer to the text, but currently not doing that*/
     margin-top: 0;
   }
   .toc_right li{
