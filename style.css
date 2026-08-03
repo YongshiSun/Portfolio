@@ -69,9 +69,6 @@ footer {
     align-items: center;
     background-image: url("images/free size/bm5.png");*/
   }
-  .book{
-
-  }
   .planner_cover{
     position: relative; /*we want relative for the div that all the text position will depend on*/
     height: 100vh;
